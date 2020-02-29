@@ -1,15 +1,8 @@
 package data.scripts;
 
 import com.fs.starfarer.api.BaseModPlugin;
-import com.fs.starfarer.api.Global;
-import com.fs.starfarer.api.PluginPick;
-import com.fs.starfarer.api.campaign.CampaignPlugin;
-import com.fs.starfarer.api.combat.MissileAIPlugin;
-import com.fs.starfarer.api.combat.MissileAPI;
-import com.fs.starfarer.api.combat.ShipAPI;
 import com.fs.starfarer.api.impl.campaign.intel.bar.events.BarEventManager;
-import com.fs.starfarer.api.impl.campaign.intel.bar.events.hbh_bareventcreator;
-import exerelin.campaign.SectorManager;
+import data.scripts.campaign.intel.bar.events.hbh_bareventcreator;
 
 public class hbhModPlugin extends BaseModPlugin {
 
