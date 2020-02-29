@@ -1,0 +1,635 @@
+{
+  "hullName": "Bladeship",
+  "hullId": "hbh_pod_main",
+  "hullSize": "CAPITAL_SHIP",
+  "spriteName": "graphics/ships/hbh_pod_main.png",
+  "style": "HIGH_TECH",
+  "coversColor": "0,0,0,0",
+  "height": 204,
+  "width": 172,
+  "center": [86, 140],
+  "collisionRadius": 346,
+  "shieldCenter": [79, -0],
+  "shieldRadius": 254,
+  "viewOffset": 0,
+  "builtInMods": [
+    "phasefield",
+    "hbh_parryshield"
+  ],
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "LARGE",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 270,
+      "angle": 45,
+      "locations": [14, 24]
+    },
+    {
+      "id": "WS0002",
+      "size": "LARGE",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 270,
+      "angle": -45,
+      "locations": [14, -24]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "UNIVERSAL",
+      "mount": "TURRET",
+      "arc": 270,
+      "angle": 45,
+      "locations": [42, 40]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "UNIVERSAL",
+      "mount": "TURRET",
+      "arc": 270,
+      "angle": -45,
+      "locations": [42, -40]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "UNIVERSAL",
+      "mount": "TURRET",
+      "arc": 270,
+      "angle": 135,
+      "locations": [-44, 24]
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "UNIVERSAL",
+      "mount": "TURRET",
+      "arc": 270,
+      "angle": -135,
+      "locations": [-44, -24]
+    },
+    {
+      "id": "SpineMount",
+      "size": "MEDIUM",
+      "type": "STATION_MODULE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 0,
+      "locations": [27, -0],
+      "renderOrderMod": 20
+    },
+    {
+      "id": "EdgeMount",
+      "size": "LARGE",
+      "type": "STATION_MODULE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 0,
+      "locations": [-93, -0],
+      "renderOrderMod": 10
+    },
+    {
+      "id": "GuardLeftMount",
+      "size": "LARGE",
+      "type": "STATION_MODULE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 0,
+      "locations": [-75, 84]
+    },
+    {
+      "id": "GuardRightMount",
+      "size": "LARGE",
+      "type": "STATION_MODULE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": -0,
+      "locations": [-75, -84]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-84.5, 72],
+      "length": 5,
+      "width": 5,
+      "angle": 180,
+      "contrailSize": 10,
+      "style": "hbh_hyperflare"
+    },
+    {
+      "location": [-84.5, -72],
+      "length": 5,
+      "width": 5,
+      "angle": -180,
+      "contrailSize": 10,
+      "style": "hbh_hyperflare"
+    },
+    {
+      "location": [-85.5, 68.5],
+      "length": 5,
+      "width": 5,
+      "angle": 180,
+      "contrailSize": 10,
+      "style": "hbh_hyperflare"
+    },
+    {
+      "location": [-85.5, -68.5],
+      "length": 5,
+      "width": 5,
+      "angle": -180,
+      "contrailSize": 10,
+      "style": "hbh_hyperflare"
+    },
+    {
+      "location": [-87.5, 65],
+      "length": 5,
+      "width": 5,
+      "angle": 180,
+      "contrailSize": 10,
+      "style": "hbh_hyperflare"
+    },
+    {
+      "location": [-87.5, -65],
+      "length": 5,
+      "width": 5,
+      "angle": -180,
+      "contrailSize": 10,
+      "style": "hbh_hyperflare"
+    },
+    {
+      "location": [-89, 61.5],
+      "length": 5,
+      "width": 5,
+      "angle": 180,
+      "contrailSize": 10,
+      "style": "hbh_hyperflare"
+    },
+    {
+      "location": [-89, -61.5],
+      "length": 5,
+      "width": 5,
+      "angle": -180,
+      "contrailSize": 10,
+      "style": "hbh_hyperflare"
+    },
+    {
+      "location": [-91, 58],
+      "length": 5,
+      "width": 5,
+      "angle": 180,
+      "contrailSize": 10,
+      "style": "hbh_hyperflare"
+    },
+    {
+      "location": [-91, -58],
+      "length": 5,
+      "width": 5,
+      "angle": -180,
+      "contrailSize": 10,
+      "style": "hbh_hyperflare"
+    },
+    {
+      "location": [-93.5, 55],
+      "length": 5,
+      "width": 5,
+      "angle": 180,
+      "contrailSize": 10,
+      "style": "hbh_hyperflare"
+    },
+    {
+      "location": [-93.5, -55],
+      "length": 5,
+      "width": 5,
+      "angle": -180,
+      "contrailSize": 10,
+      "style": "hbh_hyperflare"
+    },
+    {
+      "location": [-95.5, 51],
+      "length": 5,
+      "width": 5,
+      "angle": 180,
+      "contrailSize": 10,
+      "style": "hbh_hyperflare"
+    },
+    {
+      "location": [-95.5, -51],
+      "length": 5,
+      "width": 5,
+      "angle": -180,
+      "contrailSize": 10,
+      "style": "hbh_hyperflare"
+    },
+    {
+      "location": [-97.5, 47.5],
+      "length": 5,
+      "width": 5,
+      "angle": 180,
+      "contrailSize": 10,
+      "style": "hbh_hyperflare"
+    },
+    {
+      "location": [-97.5, -47.5],
+      "length": 5,
+      "width": 5,
+      "angle": -180,
+      "contrailSize": 10,
+      "style": "hbh_hyperflare"
+    },
+    {
+      "location": [-100, 44],
+      "length": 5,
+      "width": 5,
+      "angle": 180,
+      "contrailSize": 10,
+      "style": "hbh_hyperflare"
+    },
+    {
+      "location": [-100, -44],
+      "length": 5,
+      "width": 5,
+      "angle": -180,
+      "contrailSize": 10,
+      "style": "hbh_hyperflare"
+    },
+    {
+      "location": [-102, 40.5],
+      "length": 5,
+      "width": 5,
+      "angle": 180,
+      "contrailSize": 10,
+      "style": "hbh_hyperflare"
+    },
+    {
+      "location": [-102, -40.5],
+      "length": 5,
+      "width": 5,
+      "angle": -180,
+      "contrailSize": 10,
+      "style": "hbh_hyperflare"
+    },
+    {
+      "location": [-104, 37],
+      "length": 5,
+      "width": 5,
+      "angle": 180,
+      "contrailSize": 10,
+      "style": "hbh_hyperflare"
+    },
+    {
+      "location": [-104, -37],
+      "length": 5,
+      "width": 5,
+      "angle": -180,
+      "contrailSize": 10,
+      "style": "hbh_hyperflare"
+    },
+    {
+      "location": [-106.5, 33],
+      "length": 5,
+      "width": 5,
+      "angle": 180,
+      "contrailSize": 10,
+      "style": "hbh_hyperflare"
+    },
+    {
+      "location": [-106.5, -33],
+      "length": 5,
+      "width": 5,
+      "angle": -180,
+      "contrailSize": 10,
+      "style": "hbh_hyperflare"
+    },
+    {
+      "location": [-108, 29.5],
+      "length": 5,
+      "width": 5,
+      "angle": 180,
+      "contrailSize": 10,
+      "style": "hbh_hyperflare"
+    },
+    {
+      "location": [-108, -29.5],
+      "length": 5,
+      "width": 5,
+      "angle": -180,
+      "contrailSize": 10,
+      "style": "hbh_hyperflare"
+    },
+    {
+      "location": [-110.5, 25],
+      "length": 5,
+      "width": 5,
+      "angle": 180,
+      "contrailSize": 10,
+      "style": "hbh_hyperflare"
+    },
+    {
+      "location": [-110.5, -25],
+      "length": 5,
+      "width": 5,
+      "angle": -180,
+      "contrailSize": 10,
+      "style": "hbh_hyperflare"
+    },
+    {
+      "location": [-112.5, 21],
+      "length": 5,
+      "width": 5,
+      "angle": 180,
+      "contrailSize": 10,
+      "style": "hbh_hyperflare"
+    },
+    {
+      "location": [-112.5, -21],
+      "length": 5,
+      "width": 5,
+      "angle": -180,
+      "contrailSize": 10,
+      "style": "hbh_hyperflare"
+    },
+    {
+      "location": [-115, 17],
+      "length": 5,
+      "width": 5,
+      "angle": 180,
+      "contrailSize": 10,
+      "style": "hbh_hyperflare"
+    },
+    {
+      "location": [-115, -17],
+      "length": 5,
+      "width": 5,
+      "angle": -180,
+      "contrailSize": 10,
+      "style": "hbh_hyperflare"
+    },
+    {
+      "location": [-117, 13.5],
+      "length": 5,
+      "width": 5,
+      "angle": 180,
+      "contrailSize": 10,
+      "style": "hbh_hyperflare"
+    },
+    {
+      "location": [-117, -13.5],
+      "length": 5,
+      "width": 5,
+      "angle": -180,
+      "contrailSize": 10,
+      "style": "hbh_hyperflare"
+    },
+    {
+      "location": [-119, 10],
+      "length": 5,
+      "width": 5,
+      "angle": 180,
+      "contrailSize": 10,
+      "style": "hbh_hyperflare"
+    },
+    {
+      "location": [-119, -10],
+      "length": 5,
+      "width": 5,
+      "angle": -180,
+      "contrailSize": 10,
+      "style": "hbh_hyperflare"
+    },
+    {
+      "location": [-121.5, 6.5],
+      "length": 5,
+      "width": 5,
+      "angle": 180,
+      "contrailSize": 10,
+      "style": "hbh_hyperflare"
+    },
+    {
+      "location": [-121.5, -6.5],
+      "length": 5,
+      "width": 5,
+      "angle": -180,
+      "contrailSize": 10,
+      "style": "hbh_hyperflare"
+    },
+    {
+      "location": [-123.5, 3.5],
+      "length": 5,
+      "width": 5,
+      "angle": 180,
+      "contrailSize": 10,
+      "style": "hbh_hyperflare"
+    },
+    {
+      "location": [-123.5, -3.5],
+      "length": 5,
+      "width": 5,
+      "angle": -180,
+      "contrailSize": 10,
+      "style": "hbh_hyperflare"
+    },
+    {
+      "location": [-125.5, 1.5],
+      "length": 5,
+      "width": 5,
+      "angle": 180,
+      "contrailSize": 10,
+      "style": "hbh_hyperflare"
+    },
+    {
+      "location": [-125.5, -1.5],
+      "length": 5,
+      "width": 5,
+      "angle": -180,
+      "contrailSize": 10,
+      "style": "hbh_hyperflare"
+    },
+    {
+      "location": [-91.5, 70.5],
+      "length": 5,
+      "width": 5,
+      "angle": 180,
+      "contrailSize": 10,
+      "style": "hbh_hyperflare"
+    },
+    {
+      "location": [-91.5, -70.5],
+      "length": 5,
+      "width": 5,
+      "angle": -180,
+      "contrailSize": 10,
+      "style": "hbh_hyperflare"
+    },
+    {
+      "location": [-94, 66],
+      "length": 5,
+      "width": 5,
+      "angle": 180,
+      "contrailSize": 10,
+      "style": "hbh_hyperflare"
+    },
+    {
+      "location": [-94, -66],
+      "length": 5,
+      "width": 5,
+      "angle": -180,
+      "contrailSize": 10,
+      "style": "hbh_hyperflare"
+    },
+    {
+      "location": [-97, 60.5],
+      "length": 5,
+      "width": 5,
+      "angle": 180,
+      "contrailSize": 10,
+      "style": "hbh_hyperflare"
+    },
+    {
+      "location": [-97, -60.5],
+      "length": 5,
+      "width": 5,
+      "angle": -180,
+      "contrailSize": 10,
+      "style": "hbh_hyperflare"
+    },
+    {
+      "location": [-101.5, 53.5],
+      "length": 5,
+      "width": 5,
+      "angle": 180,
+      "contrailSize": 10,
+      "style": "hbh_hyperflare"
+    },
+    {
+      "location": [-101.5, -53.5],
+      "length": 5,
+      "width": 5,
+      "angle": -180,
+      "contrailSize": 10,
+      "style": "hbh_hyperflare"
+    },
+    {
+      "location": [-106.5, 46.5],
+      "length": 5,
+      "width": 5,
+      "angle": 180,
+      "contrailSize": 10,
+      "style": "hbh_hyperflare"
+    },
+    {
+      "location": [-106.5, -46.5],
+      "length": 5,
+      "width": 5,
+      "angle": -180,
+      "contrailSize": 10,
+      "style": "hbh_hyperflare"
+    },
+    {
+      "location": [-110.5, 39.5],
+      "length": 5,
+      "width": 5,
+      "angle": 180,
+      "contrailSize": 10,
+      "style": "hbh_hyperflare"
+    },
+    {
+      "location": [-110.5, -39.5],
+      "length": 5,
+      "width": 5,
+      "angle": -180,
+      "contrailSize": 10,
+      "style": "hbh_hyperflare"
+    },
+    {
+      "location": [-114.5, 32],
+      "length": 5,
+      "width": 5,
+      "angle": 180,
+      "contrailSize": 10,
+      "style": "hbh_hyperflare"
+    },
+    {
+      "location": [-114.5, -32],
+      "length": 5,
+      "width": 5,
+      "angle": -180,
+      "contrailSize": 10,
+      "style": "hbh_hyperflare"
+    },
+    {
+      "location": [-120, 24],
+      "length": 5,
+      "width": 5,
+      "angle": 180,
+      "contrailSize": 10,
+      "style": "hbh_hyperflare"
+    },
+    {
+      "location": [-120, -24],
+      "length": 5,
+      "width": 5,
+      "angle": -180,
+      "contrailSize": 10,
+      "style": "hbh_hyperflare"
+    },
+    {
+      "location": [-124, 16.5],
+      "length": 5,
+      "width": 5,
+      "angle": 180,
+      "contrailSize": 10,
+      "style": "hbh_hyperflare"
+    },
+    {
+      "location": [-124, -16.5],
+      "length": 5,
+      "width": 5,
+      "angle": -180,
+      "contrailSize": 10,
+      "style": "hbh_hyperflare"
+    },
+    {
+      "location": [-128.5, 9],
+      "length": 5,
+      "width": 5,
+      "angle": 180,
+      "contrailSize": 10,
+      "style": "hbh_hyperflare"
+    },
+    {
+      "location": [-128.5, -9],
+      "length": 5,
+      "width": 5,
+      "angle": -180,
+      "contrailSize": 10,
+      "style": "hbh_hyperflare"
+    },
+    {
+      "location": [-132, 3.5],
+      "length": 5,
+      "width": 5,
+      "angle": 180,
+      "contrailSize": 10,
+      "style": "hbh_hyperflare"
+    },
+    {
+      "location": [-132, -3.5],
+      "length": 5,
+      "width": 5,
+      "angle": -180,
+      "contrailSize": 10,
+      "style": "hbh_hyperflare"
+    }
+  ],
+  "bounds": [
+    -98.5, 87,
+    65.5, 48,
+    33.5, -0,
+    65.5, -48,
+    -98.5, -87,
+    -149, -0
+  ]
+}

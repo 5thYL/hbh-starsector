@@ -1,0 +1,23 @@
+{
+  "hullName": "Right Guard",
+  "hullId": "hbh_pod_guard_R",
+  "hullSize": "DESTROYER",
+  "spriteName": "graphics/ships/hbh_pod_guard_R.png",
+  "style": "HIGH_TECH",
+  "coversColor": "0,0,0,0",
+  "height": 200,
+  "width": 88,
+  "center": [84, 52],
+  "collisionRadius": 160,
+  "shieldCenter": [53, 38.5],
+  "shieldRadius": 0,
+  "viewOffset": 0,
+  "weaponSlots": [],
+  "engineSlots": [],
+  "bounds": [
+    -4.5, -4.5,
+    -56, 85,
+    155, 34,
+    16.5, -4.5
+  ]
+}

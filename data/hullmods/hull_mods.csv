@@ -1,0 +1,4 @@
+name,id,tier,rarity,tech/manufacturer,tags,uiTags,base value,unlocked,hidden,hiddenEverywhere,cost_frigate,cost_dest,cost_cruiser,cost_capital,script,desc,short,sprite
+Parry Shield,hbh_parryshield,,,Degenerate Manifestation,,,3000,,,,3,6,9,15,data.scripts.hullmods.hbh_parryshield,"Reduce shield damage by %s, increases shield turn rate by %s and shield unfolding by %s. While maintaining this shield flux cost by an increment on the second power function times %s every %s seconds. Having the shield off decreases the increament every %s seconds.
+
+An insanely resistant and quick shield that is designed to take huge amounts punishment during a short period of time. However, sustaining this shield can easily drain a ship of all its energy due to its violatile nature.","Shield is faster and more resistant, but takes more flux to sustain.",graphics/hullmods/hbh_parryshield.png

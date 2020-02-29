@@ -1,0 +1,10 @@
+{
+	"id":"hbh",
+	"name":"Fritillaria",
+	"author":"5thYL",
+	"version":"0.1",
+	"description":"The manifestation of a weeb's will.",
+	"gameVersion":"0.9.1a-RC8",
+	"jars":["jars/hbh.jar"],
+	"modPlugin":"data.scripts.hbhModPlugin"
+}

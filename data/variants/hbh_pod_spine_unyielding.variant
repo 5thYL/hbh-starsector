@@ -1,0 +1,14 @@
+{
+  "variantId": "hbh_pod_spine_unyielding",
+  "hullId": "hbh_pod_spine",
+  "displayName": "Unyielding",
+  "goalVariant": false,
+  "fluxCapacitors": 0,
+  "fluxVents": 0,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [],
+  "weaponGroups": [],
+  "modules": [],
+  "wings": []
+}

@@ -1,0 +1,13 @@
+id,type,text1,text2,text3,notes
+hbh_pod_main,SHIP,"A ship born of the manifestation of a weeb's will for his Waifu.
+
+Boasting 3 armor modules, each as durable as an onslaught, a state-of-art phase system that offers countless tactical opportunities, and the ability to trimpth in any close quarter combats. This ships' only weakness comes from its weak rearend and a lack of mobility when its system is recharging.
+
+As the weeb rejects the notion that his waifu is imperfect, this ship is imprevious to D-Mods.",,,
+,,,,,
+hbh_flowerofunrest,SHIP_SYSTEM,"Phases the main module, gains 200 speed and 60 turn speed with almost instant acceleration for 10 seconds.
+Due to the singular phase drive installed, only the main module can be phased. However, this allows flux to be vented through other parts of the ship and provides an opportunity for daring captains to perform ramming manuvers. [Definitely not inspired by Ed]",Special,,
+,,,,,
+hbh_hypervibration,SHIP_SYSTEM,"Target a random enemy within 300 range to take 100% more damage for 10 seconds every 10 seconds.
+
+By directing a huge amount of energy from Core into its channels, Edge is able to emit an incredibly strong vibration that weakens neaby enemy's damage resistance.",Offensive,,
