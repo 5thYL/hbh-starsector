@@ -1,0 +1,39 @@
+id,trigger,conditions,script,text,options,notes
+# fritillaria joins,,,,,,
+hbhBlurb,hbh_blurb,,,"""I have an old freighter that's just taking up hangar space. Perhaps you could use it.""",,
+hbhBlurbAristo,hbh_blurb,$voice == aristo,,"""Father has demanded I rid myself of an old frieghter I've been meaning to fix up, he says it's taking up valuable space in his orbital hangar. I think he's being tremendously unfair. Perhaps you could take it?""",,
+hbhOfferOption,hbh_option,,,,hbh_start:Ask about the old freighter,
+hbhBlurbBar,hbh_blurbBar,,,At a corner table a knight in dirty armor is quietly drowning in $hbh_hisOrHer sorrows.,,
+hbhOfferOptionBar,hbh_optionBar,,,,hbh_startBar:Talk to the dejected knight,
+hbhOfferTextBar,DialogOptionSelected,$option == hbh_startBar,"$missionId = hbh
+SetTextHighlights $hbh_price","""I've got a $hbh_hullClass bladeship. I won't... I won't be needing it any more."" $HeOrShe looks at you with reddened eyes that suggest sorrows which require quite a lot of drowning.
+
+Yet, as $HeOrShe sees you, $hbh_hisOrHer eyes brighten as $HeOrShe realizes the one $HeOrShe has been searching for has appeared in front of $hbh_hisOrHer.
+
+$HeOrShe is your Waifu Fritillaria!",hbh_lookBar:Ask what happened after you were seperated,
+hbhOfferTextContactAristo,DialogOptionSelected,"$option == hbh_start
+$voice == aristo","$missionId = hbh
+SetTextHighlights $hbh_price","""It's a vintage $hbh_hullClass freighter, and I was told by the seller that it's seen some real adventures. Terribly exciting, I feel, and it'd have made a fabulous conversation piece once I got it fixed up. There's always something coming up, however.""
+
+""I suppose I ought to make you pay for it to 'develop my business sense', as father put it. How much does a freighter cost, anyway. $hbh_price credits, perhaps?""","hbh_look:Ask for detailed info on the freighter
+contact_decline:Decline",
+hbhOfferTextContact,DialogOptionSelected,$option == hbh_start,"$missionId = hbh
+SetTextHighlights $hbh_price","""This $hbh_hullClass freighter has seen some light-years, but it'll fly. Would be a waste to simply scrap it. I can sell it to you for $hbh_price credits.""","hbh_look:Ask for detailed info on the freighter
+contact_decline:Decline",
+hbhBarLookAtFreighter,DialogOptionSelected,$option == hbh_lookBar,"Call $hbh_ref showShip
+DoCanAffordCheck $hbh_price contact_acceptBar","""It was terrible??""$heOrShe falls slient.
+
+Wrapping $hbh_hisOrHer arms around you, $heOrShe speaks no more, but you know $heOrShe has went back to $hbh_hisOrHer self destructive ways for quite a while.d",contact_acceptBar:Rent a room for $hbh_hisOrHer to be cleaned up and depart together,
+hbhLookAtFreighterAristo,DialogOptionSelected,"$option == hbh_look
+$voice == aristo","Call $hbh_ref showShip
+DoCanAffordCheck $hbh_price contact_accept","$personName taps a few buttons to pull up the freighter schematics for your examination.
+
+""I was thinking to augment the engines and install black market safety overrides to compel some utterly thrilling burn speeds. Don't tell father my plan, he'd be simply wroth.""","contact_accept:Buy the freighter for $hbh_price credits
+contact_decline:Decline",
+hbhLookAtFreighter,DialogOptionSelected,$option == hbh_look,"Call $hbh_ref showShip
+DoCanAffordCheck $hbh_price contact_accept","$personName taps a few buttons to pull up the freighter schematics for your examination. ""For me, it's just taking up space, which is why I'm offering a reasonable price.""","contact_accept:Buy the freighter for $hbh_price credits
+contact_decline:Decline",
+hbhPostAccept,ContactPostAccept,$missionId == hbh,"ShowPersonVisual
+RemoveCommodity credits $hbh_price
+AddShip $hbh_member
+Call $hbh_ref2 repSuccess",,,

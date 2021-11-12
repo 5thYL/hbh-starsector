@@ -1,0 +1,11 @@
+{
+	"graphics":{
+		"characters":{
+			"hbh_0":"graphics/portraits/characters/hbh_0.png"
+		}
+	},
+
+    "designTypeColors":{
+            "Degenerate Manifestation":[255,215,0,255],
+    },
+}

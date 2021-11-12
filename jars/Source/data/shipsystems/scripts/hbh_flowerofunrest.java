@@ -1,14 +1,14 @@
 package data.shipsystems.scripts;
 
 
+import java.awt.Color;
+
 import com.fs.starfarer.api.Global;
 import com.fs.starfarer.api.combat.MutableShipStatsAPI;
 import com.fs.starfarer.api.combat.ShipAPI;
 import com.fs.starfarer.api.combat.ShipSystemAPI;
 import com.fs.starfarer.api.impl.campaign.ids.Stats;
 import com.fs.starfarer.api.impl.combat.BaseShipSystemScript;
-import com.fs.starfarer.api.plugins.ShipSystemStatsScript.State;
-import java.awt.Color;
 
 
 public class hbh_flowerofunrest extends BaseShipSystemScript {
@@ -21,8 +21,8 @@ public class hbh_flowerofunrest extends BaseShipSystemScript {
 	public static final float INCOMING_DAMAGE_MULT = 0.25f;
         
     
-    	public static float SPEED_BONUS = 200f;
-	public static float TURN_BONUS = 60f;
+    public static float SPEED_BONUS = 400f;
+	public static float TURN_BONUS = 120f;
         
 	private Color color = new Color(138,3,3,255);
 	
@@ -100,8 +100,8 @@ public class hbh_flowerofunrest extends BaseShipSystemScript {
 		//float f = VULNERABLE_FRACTION;
 
 		
-		float jitterLevel = 0f;
-		float jitterRangeBonus = 0f;
+		//float jitterLevel = 0f;
+		//float jitterRangeBonus = 0f;
 		float levelForAlpha = level;
 		
 		ShipSystemAPI cloak = ship.getPhaseCloak();
@@ -184,6 +184,7 @@ public class hbh_flowerofunrest extends BaseShipSystemScript {
 	}
 
 
+	@Override
 	public void unapply(MutableShipStatsAPI stats, String id) {
 //		stats.getHullDamageTakenMult().unmodify(id);
 //		stats.getArmorDamageTakenMult().unmodify(id);

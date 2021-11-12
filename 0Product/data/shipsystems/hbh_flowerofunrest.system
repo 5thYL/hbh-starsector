@@ -1,0 +1,45 @@
+{
+	"id":"hbh_flowerofunrest",
+	"type":"ENGINE_MOD",
+	"aiType":"BURN_DRIVE",
+	
+	"statsScript":"data.shipsystems.scripts.hbh_flowerofunrest",
+	"runScriptWhilePaused":true, # only for the player's ship
+	"runScriptWhileIdle":true,  # this means unapply() never gets called
+	"blockActionsWhileChargingDown":false,
+	
+	"phaseHighlight":"_glow1",
+	"phaseDiffuse":"_glow2",
+	
+	"effectColor1":[138,3,3,255],
+	"effectColor2":[138,3,3,150],
+	
+	"flameoutOnImpactChance":0,
+	
+	"clampTurnRateAfter":true,
+	"clampMaxSpeedAfter":true,
+	
+	"engineGlowColor":[138,3,3,255],
+	"engineGlowContrailColor":[138,3,3,255],
+	"engineGlowLengthMult":0,
+	"engineGlowWidthMult":0,
+	"engineGlowGlowMult":0,
+	
+	"soundFilterType":"LOWPASS",
+	"soundFilterGain":0.8,
+	"soundFilterGainHF":0.25,
+	
+	"shipAlpha":1, # handled in stats script
+	#"shipAlpha":0.25,
+	
+	"useSound":"system_phase_cloak_activate",
+	#"deactivateSound":"system_phase_cloak_deactivate",
+	"deactivateSound":"system_phase_cloak_deactivate",
+	"outOfUsesSound":"system_phase_cloak_collision",
+	
+		"aiHints":{
+		"activeSpeedIncrease":200,
+		"burstMovementPotential":0,
+		"averageSpeedIncrease":200,
+	}
+}

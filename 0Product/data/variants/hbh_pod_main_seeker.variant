@@ -1,0 +1,27 @@
+{
+  "variantId": "hbh_pod_main_seeker",
+  "hullId": "hbh_pod_main",
+  "displayName": "Seeker",
+  "goalVariant": false,
+  "fluxCapacitors": 0,
+  "fluxVents": 0,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [],
+  "weaponGroups": [],
+  "modules": [
+    {
+      "GuardLeftMount": "hbh_pod_guard_L_steeled"
+    },
+    {
+      "GuardRightMount": "hbh_pod_guard_R_steeled"
+    },
+    {
+      "SpineMount": "hbh_pod_spine_unyielding"
+    },
+    {
+      "EdgeMount": "hbh_pod_edge_tempered"
+    }
+  ],
+  "wings": []
+}

@@ -1,0 +1,20 @@
+{
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "c:\\Games\\Starsector\\starsector-core\\starfarer.api.jar",
+        "c:\\Games\\Starsector\\starsector-core\\starfarer_obf.jar",
+        "c:\\Games\\Starsector\\starsector-core\\xstream-1.4.10.jar",
+        "c:\\Games\\Starsector\\starsector-core\\commons-compiler.jar",
+        "c:\\Games\\Starsector\\starsector-core\\commons-compiler-jdk.jar",
+        "c:\\Games\\Starsector\\starsector-core\\fs.common_obf.jar",
+        "c:\\Games\\Starsector\\starsector-core\\fs.sound_obf.jar",
+        "c:\\Games\\Starsector\\starsector-core\\janino.jar",
+        "c:\\Games\\Starsector\\starsector-core\\jinput.jar",
+        "c:\\Games\\Starsector\\starsector-core\\jogg-0.0.7.jar",
+        "c:\\Games\\Starsector\\starsector-core\\jorbis-0.0.15.jar",
+        "c:\\Games\\Starsector\\starsector-core\\json.jar",
+        "c:\\Games\\Starsector\\starsector-core\\log4j-1.2.9.jar",
+        "c:\\Games\\Starsector\\starsector-core\\lwjgl.jar",
+        "c:\\Games\\Starsector\\starsector-core\\lwjgl_util.jar"
+    ]
+}

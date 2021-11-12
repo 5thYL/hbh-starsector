@@ -6,8 +6,6 @@ import com.fs.starfarer.api.combat.MutableShipStatsAPI;
 import com.fs.starfarer.api.combat.ShipAPI;
 import com.fs.starfarer.api.combat.ShipAPI.HullSize;
 import com.fs.starfarer.api.combat.ShieldAPI;
-import com.fs.starfarer.api.plugins.ShipSystemStatsScript;
-import static data.shipsystems.scripts.hbh_flowerofunrest.SPEED_BONUS;
 
 public class hbh_parryshield extends BaseHullMod {
 
@@ -17,17 +15,19 @@ public class hbh_parryshield extends BaseHullMod {
     public static final float SHIELD_BONUS = 40f;
     public static final float INCREASE_INTERVAL = 3f;
     public static final float DECREASE_INTERVAL = 3f;
-    public static float counter = 0f;
-    public static float multiplier = 0f;
+    public float counter = 0f;
+    public float multiplier = 0f;
 
     protected Object STATUSKEY1 = new Object();
 
+    @Override
     public void applyEffectsBeforeShipCreation(HullSize hullSize, MutableShipStatsAPI stats, String id) {
         stats.getShieldDamageTakenMult().modifyMult(id, 1f - SHIELD_BONUS * 0.01f);
         stats.getShieldTurnRateMult().modifyPercent(id, SHIELD_BONUS_TURN);
         stats.getShieldUnfoldRateMult().modifyPercent(id, SHIELD_BONUS_UNFOLD);
     }
 
+    @Override
     public String getDescriptionParam(int index, HullSize hullSize) {
         if (index == 0) {
             return "" + (int) SHIELD_BONUS + "%";
@@ -51,6 +51,7 @@ public class hbh_parryshield extends BaseHullMod {
         return null;
     }
 
+    @Override
     public void advanceInCombat(ShipAPI Ship, float amount) {
         MutableShipStatsAPI stats = Ship.getMutableStats();
         ShieldAPI shield = Ship.getShield();
@@ -71,10 +72,12 @@ public class hbh_parryshield extends BaseHullMod {
                 "Current shield upkeep multiplier:" + stats.getShieldUpkeepMult().getModifiedValue(), false);
     }
 
+    @Override
     public boolean isApplicableToShip(ShipAPI ship) {
         return ship != null && ship.getShield() != null;
     }
-
+@Override
+    
     public String getUnapplicableReason(ShipAPI ship) {
         return "Ship has no shields";
     }
